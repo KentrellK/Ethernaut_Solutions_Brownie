@@ -1,0 +1,43 @@
+dependencies:
+  # - <organization/repo>@<version>
+  - smartcontractkit/chainlink-brownie-contracts@1.1.1
+  - OpenZeppelin/openzeppelin-contracts@3.0.0
+compiler:
+  solc:
+    remappings:
+      - '@chainlink=smartcontractkit/chainlink-brownie-contracts@1.1.1'
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.0.0'
+dotenv: .env
+networks:
+  default: development
+  rinkeby:
+    eth_usd_price_feed: '0x8A753747A1Fa494EC906cE90E9f37563A8AF630e'
+    Fallback_address: '0x7b498c160E0b8eF8C67D556b72Ac208146bd9505'
+    FallOut_address: '0x13aE6A3281E978b853d2422dFdcEA8B0655c802B'
+    CoinFlip_address: '0x24683b18A3FdabaFe0Ae04De897c32a3BD891d5B'
+    Telephone_address: '0x22b835567C9F8A4956921C68B670E48ffc1164a7'
+    Token_address: '0x8C00c5C34Bae5c2Df8caa82437ABD004C804da83'
+    Delegation_address: '0xC23D3B8196ac215f556d7587dF2E9282D7CF79E3'
+    Force_address: '0xae525b1Eb6FD8e58c23083eB9715a13d0e9357a8'
+    Vault_address: '0xA008fa91c23A2F6CF9d06F22806639F9bb41221C'
+    King_Address: '0xeF53248E2290695625FA3d3428a6eCE34D7d0658'
+    Reentrance_address: '0x09c97D6b3774C05a84BA6252fcC9AFa0c50317db'
+    Elevator_address: '0x6E8Ea7FFa437fa83358B1f40F839e54fDf2b77B3'
+    Privacy_address: '0xC8b640F6f704B5408A15c8c8561b0e1dafc41224'
+    GatekeeperOne_address: '0x55Aea7A808dFDe12f01FaF07CEA36D3A27b6847e'
+    GatekeeperTwo_address: '0xf793b1cd3C87779B356202167F351130A4841EBF'
+    NaughtCoin_address: '0x1dd33c426b6A9b35a0b3E44A2085132AfcC05c86'
+    Preservation_address: '0xf8FE9B3890df6FBD753b5aCD2c96AF0216F3Fe3C'
+    Recovery_address: '0xa28d61d059f020704Bb6011534D7752992DCC5E6'
+    MagicNum_address: '0x1d1a651cC9e7CAd1E5bb2a9E4EC236F023ef4f9d'
+    AlienCodex_address: '0x7A22E08558C51f76429C4f4E10fA167d1F1EF3e1'
+    Denial_address: '0xDAaB66a5429428E45A48aB74500c05AF215E012D'
+    Shop_address: '0xA7246352D0CcAFd9C188CC7B8e941CFbE5F278ED'
+    Dex_address: '0xa51204952fa07044cDcee49e48A3a036Dce9A707'
+    DexTwo_address: '0xa9385C5f5beC75422BE56E6c96e5AF71Ac24a8ea'
+    PuzzleProxyInstance_address: '0x0C38Ff68AA53CD70d6519DFdC17fBE7340DD4efB'
+    MotorbikeProxyInstance_address: '0x6685B6098a96C880DaA788caf35D22a16FCFdC12'
+wallets:
+  from_key: ${PRIVATE_KEY}
+settings:
+  gas_limit: "100000000000"
